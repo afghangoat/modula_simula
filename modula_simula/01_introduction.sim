@@ -1,0 +1,37 @@
+Begin
+    Class Person;
+        Begin
+            Text name;
+            Integer age;
+
+            Procedure print;
+                Begin
+                    OutText("Name: ");
+					OutText(name);
+					OutImage;
+                    OutText("Age: ");
+					OutInt(age,0);
+					OutImage;
+                End;
+        End;
+
+    Person p;
+    p :- New Person;
+    p.name := "Alice";
+    p.age := 25;
+    Call p.print;
+	
+	!
+	Comment
+	!
+
+    OutText ("Hello, World!");
+    OutImage;
+	
+	If 2==2 Then
+		OutText("Wow");
+	Else
+		
+		OutText("Not Wow");
+	End;
+End;
